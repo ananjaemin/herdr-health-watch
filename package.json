@@ -1,0 +1,13 @@
+{
+  "name": "herdr-health-watch",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Local-first Health Watch desktop mod for Herdr",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "bun test mods/health-watch",
+    "test:installer": "python3 -m unittest discover -s scripts -p 'test_*.py'",
+    "package": "python3 scripts/package.py"
+  }
+}

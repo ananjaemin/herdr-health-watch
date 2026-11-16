@@ -1,0 +1,54 @@
+{
+  "schema_version": 1,
+  "vitals": {
+    "version": "0.3.1",
+    "bundled": false,
+    "auto_download": false,
+    "license": "MIT",
+    "copyright": "Copyright (c) 2026 Hjortur Stefan Olafsson",
+    "source_commit": "cfa895c75a23630cfc19727f820a4871d19df7b0",
+    "release_url": "https://github.com/mrolafsson/herdr-vitals/releases/tag/v0.3.1",
+    "source_url": "https://github.com/mrolafsson/herdr-vitals/tree/cfa895c75a23630cfc19727f820a4871d19df7b0",
+    "license_url": "https://github.com/mrolafsson/herdr-vitals/blob/cfa895c75a23630cfc19727f820a4871d19df7b0/LICENSE",
+    "checksums_url": "https://github.com/mrolafsson/herdr-vitals/releases/download/v0.3.1/checksums.txt",
+    "checksums_sha256": "74204e20e7a0287c878baeca4a1a025a94225b7c12aebe2780d7d1416e8fcb97",
+    "archive_checksum_provenance": "Official release asset digests and official checksums.txt, inspected 2026-11-16; hashes cover release archives, not standalone binaries.",
+    "runtime_base": "~/.local/share/herdr-health-watch",
+    "binary_relative_path": "vitals/0.3.1/herdr-vitals",
+    "config_relative_path": "config/config.json",
+    "config_exact_json": "{\"background\":false,\"alerts\":false,\"ai_alerts\":false,\"herdr_machines\":false,\"local\":true,\"interval_seconds\":10}",
+    "platforms": {
+      "darwin_arm64": {
+        "archive": "herdr-vitals_0.3.1_darwin_arm64.tar.gz",
+        "url": "https://github.com/mrolafsson/herdr-vitals/releases/download/v0.3.1/herdr-vitals_0.3.1_darwin_arm64.tar.gz",
+        "archive_sha256": "d885d9d50e45a03dca0461ab3c6afabb57308b6dabd3a3d2182cf63d5b1fe498",
+        "binary_sha256": "f37fbc1ea81437ff2d0244a692eeeacc69ab2772b33c3b34d6fc2413ed407775",
+        "binary_checksum_provenance": "Maintainer-supplied known extracted binary digest; not a standalone binary checksum published by upstream."
+      },
+      "darwin_x86_64": {
+        "archive": "herdr-vitals_0.3.1_darwin_amd64.tar.gz",
+        "url": "https://github.com/mrolafsson/herdr-vitals/releases/download/v0.3.1/herdr-vitals_0.3.1_darwin_amd64.tar.gz",
+        "archive_sha256": "ee4aabde7e6b829d06f52f511ecb448abd32f5071a47ba7709957902544383d4"
+      },
+      "linux_x86_64": {
+        "archive": "herdr-vitals_0.3.1_linux_amd64.tar.gz",
+        "url": "https://github.com/mrolafsson/herdr-vitals/releases/download/v0.3.1/herdr-vitals_0.3.1_linux_amd64.tar.gz",
+        "archive_sha256": "ef59143edb5008d5216d2a26f089b3ec5b9605c65a3a4564d8cb55af5f1a8df7"
+      },
+      "linux_arm64": {
+        "archive": "herdr-vitals_0.3.1_linux_arm64.tar.gz",
+        "url": "https://github.com/mrolafsson/herdr-vitals/releases/download/v0.3.1/herdr-vitals_0.3.1_linux_arm64.tar.gz",
+        "archive_sha256": "627bafcef0a79a086c40096cad85113d63792a170bbe21bdd1872a2ac7366d0b"
+      }
+    }
+  },
+  "notifications": {
+    "bundled": false,
+    "macos": "Separately user-installed terminal-notifier, discovered through standard Homebrew/PATH locations or an explicit --notifier symlink",
+    "linux": "Separately user-installed notify-send and a desktop notification service",
+    "license_note": "External tools retain their own licenses and notices; no third-party notification binary or license grant is included here."
+  },
+  "host_modules": ["herdr", "gpui-kit", "gpui-base"],
+  "installer_runtime": "Python 3.9+ standard library only",
+  "development_test_runner": "Bun (not required at mod runtime)"
+}
